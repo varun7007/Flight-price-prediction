@@ -1,45 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Flight Price Predictor - README</title>
-</head>
-<body>
-  <h1>Flight Price Predictor</h1>
-  <h2>Description</h2>
-  <p>The Flight Price Predictor is a Python project that uses machine learning to predict flight prices based on various parameters. It aims to assist users in estimating the cost of air travel and making informed decisions about booking flights.</p>
-  <h2>Installation</h2>
-  <p>To use this project, follow the steps below:</p>
-  <ol>
-    <li>Ensure you have Python 3 installed on your system.</li>
-    <li>Clone this repository to your local machine or download the project files.</li>
-    <li>Navigate to the project directory using the command line or terminal.</li>
-    <li>Create a virtual environment (optional but recommended) to isolate the project dependencies.</li>
-    <li>Install the required Python packages by running the command: <code>pip install -r requirements.txt</code></li>
-    <li>Once the dependencies are installed, you can execute the program.</li>
-  </ol>
-  <h2>Usage</h2>
-  <p>After setting up the project, follow these steps to use the Flight Price Predictor:</p>
-  <ol>
-    <li>Ensure you have an internet connection as the predictor may require fetching real-time data.</li>
-    <li>Run the main script using the command: <code>python main.py</code></li>
-    <li>Follow the instructions displayed on the console to input the necessary details, such as departure and arrival locations, date, airline preference, etc.</li>
-    <li>Once you've provided the required inputs, the predictor will analyze the data and generate an estimated flight price.</li>
-    <li>The predicted price will be displayed on the console.</li>
-  </ol>
-  <h2>Contributing</h2>
-  <p>If you'd like to contribute to the Flight Price Predictor project, please follow these steps:</p>
-  <ol>
-    <li>Fork the repository on GitHub.</li>
-    <li>Create a new branch with a descriptive name for your feature or bug fix.</li>
-    <li>Make the necessary changes and commit them.</li>
-    <li>Push your branch to your forked repository.</li>
-    <li>Create a pull request to the original repository, explaining your changes and their benefits.</li>
-    <li>Wait for the project maintainers to review and merge your pull request.</li>
-  </ol>
-  <p>If you have any questions or suggestions regarding the Flight Price Predictor project, please feel free to contact the project maintainers:</p>
-  <ul>
-    <li>John Doe - vs738803@gmail.com</li>
-   
-  </ul>
-</body>
-</html>
+# Flight Fare Prediction: 
+
+## Table of Content
+  * [Demo](#demo)
+  * [Overview](#overview)
+  * [Motivation](#motivation)
+  * [Installation](#installation)
+  * [Deployement on Heroku](#deployement-on-heroku)
+  * [Directory Tree](#directory-tree)
+  * [Bug / Feature Request](#bug---feature-request)
+  * [Future scope of project](#future-scope)
+
+
+## Demo
+Link: [https://flight-price-prediction-api.herokuapp.com/](https://flight-price-prediction-api.herokuapp.com/)
+
+[![](https://i.imgur.com/R1g2wvC.png)](https://flight-price-prediction-api.herokuapp.com/)
+
+[![](https://i.imgur.com/p0aeL6c.png)](https://flight-price-prediction-api.herokuapp.com/)
+
+## Overview
+This is a Flask web app which predicts fare of Flight ticket.
+
+## Motivation
+What to do when you are at home due to this pandemic situation? I started to learn Machine Learning model to get most out of it. I came to know mathematics behind all supervised models. Finally it is important to work on application (real world application) to actually make a difference.
+
+## Installation
+The Code is written in Python 3.6.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+```bash
+pip install -r requirements.txt
+```
+
+## Deployement on Heroku
+Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
+
+[![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
+
+Our next step would be to follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
+
+## Directory Tree 
+```
+├── static 
+│   ├── css
+├── template
+│   ├── home.html
+├── Procfile
+├── README.md
+├── app.py
+├── flight_price.ipynb
+├── flight_rf.pkl
+├── requirements.txt
+```
+
+## Technologies Used
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+
+
+## Bug / Feature Request
+
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an [issue](https://github.com/Mandal-21/Flight-Price-Prediction/issues) here by including your search query and the expected result
+
+## Future Scope
+
+* Use multiple Algorithms
+* Optimize Flask app.py
+* Front-End 
